@@ -195,7 +195,7 @@ filterApplyHandler = () => {
                     <span>Upcoming Movies</span>
                 </div>
                 <div>
-                <GridList cols={5} className={classes.gridListUpcomingMovies}>
+                <GridList cols={6} className={classes.gridListUpcomingMovies}>
                         {moviesData.map((tile) => (
                             <GridListTile key={tile.id} className="poster-grid" >
 
@@ -221,7 +221,7 @@ filterApplyHandler = () => {
         alt={movie.title}
      className="movie-poster" />
  <GridListTileBar title={movie.title} subtitle={<span>Release date : 
-                        {new Date(filterMovie.release_date).toDateString }
+                        {new Date(movie.release_date).toDateString() }
                         </span>}/></GridListTile>))}
 </GridList>
 </div>
@@ -241,7 +241,7 @@ filterApplyHandler = () => {
     </FormControl>
 
     <FormControl className={classes.formControl}>
-    <InputLabel htmlFor="select-multiple-checkbox">genres</InputLabel>
+    <InputLabel htmlFor="select-multiple-checkbox">Genres</InputLabel>
         <Select multiple
         input={<Input id="select-multiple-checkbox-genre" />}
         renderValue = {selected => selected.join(",")}
