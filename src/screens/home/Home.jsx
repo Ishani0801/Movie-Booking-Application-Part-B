@@ -23,6 +23,8 @@ const useStyles = makeStyles(() => ({
       height: 450,
     },
   }));
+
+//Functional components
 function Home() {
   const [filteredMovies, setFilteredMovies] = useState(moviesData);
   const [moviename, setMovieName] = React.useState("");
