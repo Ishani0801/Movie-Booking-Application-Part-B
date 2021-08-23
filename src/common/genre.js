@@ -10,15 +10,8 @@ let genres = [
     {
         id: 3,
         name: "Drama"
-    },
-    {
-        id: 4,
-        name: "Crime"
-    },
-    {
-        id: 5,
-        name: "Adventure"
-    },
+    }
 ]
+
 
 export default genres;
