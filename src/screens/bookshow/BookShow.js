@@ -182,7 +182,6 @@ class BookShow extends Component {
         )
 
         
-
     }
 }
 
